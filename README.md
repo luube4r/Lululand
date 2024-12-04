@@ -29,15 +29,24 @@ In addition to the current setup, I aim to:
 - Automate threat detection and response processes using scripts and open-source tools.  
 
 ## Technical Setup  
-- **Virtualization Platform**: Oracle VM VirtualBox 7.0.22
-- **Firewall**: OPNsense Firewall 24.7.9
+- **Virtualization Platform**: Oracle VM VirtualBox
+- **Firewall**: OPNsense Firewall
 - **Internal Machines**:  
-  - Kali GNU/Linux 2024.4
-  - Ubuntu 24.04.1 LTS
+  - Kali GNU/Linux
+  - Ubuntu
   - Windows 10  
 
 ## How to Use  
 Coming soon: Step-by-step instructions for replicating the Lululand network, including configurations for OPNsense and virtual machines.  
+1. Install the latest version of **Oracle VirtualBox** or any type 2 hypervisor that you're familiar with
+   - **VirtualBox Download Page**: https://www.oracle.com/virtualization/technologies/vm/downloads/virtualbox-downloads.html#vbox
+2. Download the latest ISO images for the OPNsense Firewall, and the Kali Linux, Ubuntu, and Windows 10/11 machines.
+   - **OPNsense Firewall Download Page**: https://opnsense.org/download/
+   - **Kali Linux**: https://www.kali.org/get-kali/#kali-installer-images
+   - **Ubuntu**: https://ubuntu.com/download/desktop#how-to-install-OracularOriole
+   - **Windows 10/11**: https://www.microsoft.com/en-us/software-download/windows11
+3. Use the ISO images to create virtual machines in VirtualBox
+4. 
 
-## Contributions  
+## Contributions
 This project is a personal endeavor aimed at self-education and skill-building. However, suggestions and feedback are welcome. Feel free to open an issue or submit a pull request with recommendations.  
