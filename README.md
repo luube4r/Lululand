@@ -37,7 +37,6 @@ In addition to the current setup, I aim to:
   - Windows 10  
 
 ## How to Use  
-Coming soon: Step-by-step instructions for replicating the Lululand network, including configurations for OPNsense and virtual machines.  
 1. Install the latest version of **Oracle VirtualBox** or any type 2 hypervisor that you're familiar with
    - **VirtualBox Download Page**: https://www.oracle.com/virtualization/technologies/vm/downloads/virtualbox-downloads.html#vbox
 2. Download the latest ISO images for the OPNsense Firewall, and the Kali Linux, Ubuntu, and Windows 10/11 machines.
@@ -46,7 +45,11 @@ Coming soon: Step-by-step instructions for replicating the Lululand network, inc
    - **Ubuntu**: https://ubuntu.com/download/desktop#how-to-install-OracularOriole
    - **Windows 10/11**: https://www.microsoft.com/en-us/software-download/windows11
 3. Use the ISO images to create virtual machines in VirtualBox
-4. 
+4. **VirtualBox Configurations for firewall**
+5. Boot up the firewall.
+   - Log into the firewall using the default login and password
+   - Enter 1 into the terminal to assign LAN and WAN interfaces
+   - 
 
 ## Contributions
 This project is a personal endeavor aimed at self-education and skill-building. However, suggestions and feedback are welcome. Feel free to open an issue or submit a pull request with recommendations.  
