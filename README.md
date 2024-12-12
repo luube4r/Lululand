@@ -39,17 +39,25 @@ In addition to the current setup, I aim to:
 ## How to Use  
 1. Install the latest version of **Oracle VirtualBox** or any type 2 hypervisor that you're familiar with
    - **VirtualBox Download Page**: https://www.oracle.com/virtualization/technologies/vm/downloads/virtualbox-downloads.html#vbox
-2. Download the latest ISO images for the OPNsense Firewall, and the Kali Linux, Ubuntu, and Windows 10/11 machines.
+2. Download the latest ISO images for the OPNsense Firewall, and the Kali Linux, Ubuntu, and Windows 11 machines.
    - **OPNsense Firewall Download Page**: https://opnsense.org/download/
    - **Kali Linux**: https://www.kali.org/get-kali/#kali-installer-images
    - **Ubuntu**: https://ubuntu.com/download/desktop#how-to-install-OracularOriole
-   - **Windows 10/11**: https://www.microsoft.com/en-us/software-download/windows11
-3. Use the ISO images to create virtual machines in VirtualBox
-4. **VirtualBox Configurations for firewall**
-5. Boot up the firewall.
-   - Log into the firewall using the default login and password
-   - Enter 1 into the terminal to assign LAN and WAN interfaces
+   - **Windows 11**: https://www.microsoft.com/en-us/software-download/windows11
+3. **Creating OPNsense Firewall VM**
+   - Enter a name for the VM and the OPNsense ISO image. Change the type to BSD and the version to FreeBSD
+   - Set base memory to 2048 MB and processors to 2
+   - Set disk size to 16 GB
+   - Go to the firewall VM's settings, and go to network. Enable adapter 1 and attach it to NAT, and enable adapter 2 and attach it to an internal network (intent or network name of your choosing)
+5. **Firewall Configuration**
+   - Boot up the firewall
+   - Log into the firewall using the login: 'installer' and password: 'opnsense'
+   - Choose the default keymap setting
+   - Choose Install (UFS)
+   - Choose VBox Hard disk and confirm your choice
+   - After the installation is finished, change the root password then complete the installation
+   - Let the VM reboot. Once the VBox graphic appears, click on 'Devices' in the window menu, go to optical drives, and click 'Remove disk from virtual drive'
+   - Log in into the firewall using 'root' as the login and the password you made
    - 
-
 ## Contributions
 This project is a personal endeavor aimed at self-education and skill-building. However, suggestions and feedback are welcome. Feel free to open an issue or submit a pull request with recommendations.  
