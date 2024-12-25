@@ -4,7 +4,7 @@
 **Lululand** is a virtual network created to serve as a hands-on learning and testing environment for cybersecurity concepts and techniques. Developed as part of my journey as a Network Security major, Lululand allows me to apply and refine the knowledge and skills I gain throughout my studies and career.  
 
 The network operates within Oracle VM VirtualBox and is designed to facilitate experimentation, testing, and practice. Lululand is equipped with:  
-- An **OPNsense firewall** with IDS/IPS capabilities.  
+- An **OPNsense firewall**.  
 - Three internal virtual machines:  
   - **Kali Linux** for offensive security testing.  
   - **Ubuntu** for server or application hosting.  
@@ -22,9 +22,9 @@ The primary goals of Lululand include:
 
 ## Future Plans  
 In addition to the current setup, I aim to:  
-- Introduce additional virtual machines and services.  
-- Configure advanced monitoring tools and logging mechanisms.  
-- Automate threat detection and response processes using scripts and open-source tools.  
+- Develop a scenario to design the network infrastructure, optimizing its ability to effectively manage and implement changes to the network's security configuration.  
+- Successfully configure and host a website on a designated machine within the network, ensuring proper accessibility and security measures.  
+- Explore the firewall's IDS/IPS and web proxy capabilities.  
 
 ## Technical Setup  
 - **Virtualization Platform**: Oracle VM VirtualBox
@@ -52,12 +52,12 @@ In addition to the current setup, I aim to:
    - Log into the firewall using the login: 'installer' and password: 'opnsense'.
    - Choose the default keymap setting.
    - Choose Install (UFS).
-   - Choose VBox Hard disk and confirm your choice.
+   - Choose VBox hard disk and confirm your choice.
    - After the installation is finished, change the root password, then complete the installation.
    - Let the VM reboot. Once the VBox graphic appears, click on 'Devices' in the window menu, go to optical drives, and click 'Remove disk from virtual drive'.
    - Log in to the firewall using 'root' as the login and the password you made.
    - Enter 1 to assign the WAN and LAN interface.
-   - Set the WAN interface to 'em0' (NAT interface), then set the LAN interface to 'em1' (internal network interface).
+   - Set the WAN interface to 'em0' (NAT interface) and the LAN interface to 'em1' (internal network interface).
    - Enter 2 to set the LAN interface's IPv4 address (static (not DHCP)) and subnet mask.
    - You can activate the DHCP server on the LAN and create client address ranges to your liking. 
    - Select yes for web GUI options.
